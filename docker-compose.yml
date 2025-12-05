@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  opentts:
+    image: synesthesiam/opentts:latest
+    container_name: opentts
+    restart: unless-stopped
+    ports:
+      - "5002:5002"
+    environment:
+      - LOG_LEVEL=info
+    volumes:
+      - ./data:/data
