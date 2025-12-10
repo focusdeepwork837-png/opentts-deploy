@@ -1,0 +1,5 @@
+[build]
+builder = "DOCKERFILE"
+
+[deploy]
+start = "python3 -m http.server 5500"
